@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management Service</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="background">
+    <div id="top">
+        <a href="#" class="fa fa-envelope" style="text-decoration:none;  color: white;">
+            bookshelf@gmail.com
+          </a>
+          <a href="#" class="fa fa-phone" style="text-decoration:none; color: white;">
+            +91-9876543210
+          </a>
+          <a href="#" class="fa fa-facebook" style="text-decoration:none; padding:7px; float:right; color: white;"></a>
+          <a href="#" class="fa fa-instagram" style="text-decoration:none; padding:7px; float:right; color: white;"></a>
+          <a href="#" class="fa fa-whatsapp" style="text-decoration:none;  padding: 7px ; float:right; color: rgb(252, 252, 252);"></a>
+    </div>
+    <div id="menu">
+      <div id="logo"><b style="color:#a7616a ;">BOOK </b><b style="color:#7e3c38 ;">SHELF</b>
+      </div>
+      <div id="menu1">
+          <ul>
+              <a href="index.html"><li class="fa fa-home"> Home</li></a>
+              <a href="#"><li class="fa fa-image"> Gallery</li></a>
+              <a href="admin.html"><li class="fa fa-user">Admin </li></a>
+              <a href="register.html"><li class="fa fa-registered">New User</li></a>
+              <a href="#"><li class="fa fa-user"> Login</li></a>
+
+          </ul>
+      </div>   
+  </div>
+  <div id="slider">
+    <div id="x"><b style=" color: #ffffff; font-size: 50PX;">Discover the magic of words at</b>
+    <p style="font-size: 55PX;">BOOK SHELF</p>
+    </div> 
+    <div id="y">
+        <div id="l">
+            <div id="loginContainer">
+              <h1>Welcome to the Library</h1>
+              <form id="loginForm">
+                <label>
+                  <input type="radio" name="userType" value="student" required> Student
+                </label>
+                <label>
+                  <input type="radio" name="userType" value="admin" required> Admin
+                </label>
+                <br><input type="text" id="username" placeholder="Username" required></br>
+                <br><input type="password" id="password" placeholder="Password" required>
+                <br><button type="submit">Login</button>
+              </form>
+            </div>
+
+        </div>
+    </div> 
+</div>
+<div id="studentContainer" style="display: none;">
+  <h2>Welcome, Student!</h2>
+  <table id="allBooksTable">
+    <thead>
+      <tr>
+        <th>Book Title</th>
+        <th>Author</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- All books added by the admin will be dynamically added here -->
+    </tbody>
+  </table>
+  <p>Total Books Purchased: <span id="totalBooksPurchased"></span></p>
+</div>
+
+<div id="adminContainer" style="display: none;">
+  <h2>Welcome, Admin!</h2>
+  <form id="bookForm">
+    <input type="text" id="bookTitle" placeholder="Book Title" required>
+    <input type="text" id="authorName" placeholder="Author" required>
+    <button type="submit">Add Book</button>
+  </form>
+  <table id="bookTable">
+    <thead>
+      <tr>
+        <th>Book Title</th>
+        <th>Author</th>
+        <th>Count</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Book entries will be dynamically added here -->
+    </tbody>
+  </table>
+  <p>Total Books: <span id="totalBooks"></span></p>
+</div>
+
+
+<div id="down">
+  <h4>Stay Connected</h4>
+  <a href="#" class="fa fa-facebook" style="text-decoration: none; padding: 5px 12px;color: white; "></a>
+  <a href="#" class="fa fa-instagram" style="text-decoration: none; padding: 10px 12px;color: white;"></a>
+  <a href="#" class="fa fa-whatsapp" style="text-decoration: none; padding: 10px 12px;color: white;"></a>
+  <h2>Contact Address</h2>
+  <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color: white; ">
+      162, Bharathi Salai, Ramapuram
+      Chennai, Tamil Nadu 600089
+  </a> <br>
+  <a href="#" class="fa fa-phone" style="text-decoration: none; padding: 10px 12px;color: white;">
+    +91-9876543210
+  </a> <br>
+  <a href="#" class="fa fa-envelope" style="text-decoration: none; padding: 10px 12px; color:white;">
+    bookshelf@gmail.com
+    </a>
+</div>
+<div class="footer">Developed By : Nivethita.E </div>
+
+
+ 
+  <script src="script.js"></script>
+  </div>
+</body>
+</html>
+
